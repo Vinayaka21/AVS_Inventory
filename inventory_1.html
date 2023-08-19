@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVS Inventory Solutions</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #f3efef;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+      background-image: url("image.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Container styles */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Form styles */
+    form {
+      background-color: #201e1e;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #6b0792;
+      color: #fff;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color:  #6b0792;
+    }
+
+    /* Table styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color:#6b0792;
+      color: #fff;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 600px) {
+      form {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>AVS Inventory Solutions</h1>
+
+    <form action="inventory" method="get">
+        
+      <h2>Add Item</h2>
+      <label for="item-type">Item Type:</label>
+      <select id="item-type" name="t1">
+          <option value="--select--">--select--</option>
+        <option value="software">Software</option>
+        <option value="hardware">Hardware</option>
+      </select>
+
+      <label for="item-name">Item Name:</label>
+      <input type="text" id="item-name" name="t2" placeholder="Enter item name">
+
+      <label for="item-description">Item Description:</label>
+      <input type="text" id="item-description" name ="t3" placeholder="Enter item description">
+<label for="itemstatus">Record Inserted Successfully</label>
+      <button type="Submit" class="button">Add Item</button>
+      <table>
+          <tr>
+              <td align="right" >  <a href="inventory.jsp">Inventory Master</a></td>
+          </tr>
+      </table>
+       
+    </form>
+
+    
+  </div>
+
+  <script>
+  
+  </script>
+  </body>
+  </html>
